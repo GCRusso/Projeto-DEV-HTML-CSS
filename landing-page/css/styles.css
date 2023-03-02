@@ -129,5 +129,14 @@ main section{
 }
 
 section .h3{
-    
+    font-family: 'Courier New';
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+
+section .h4{
+    font-family: "Bebas-Neue";
+    font-size: 64px;
+    color: #FFAF00;
 }
