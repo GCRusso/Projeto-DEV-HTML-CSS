@@ -1,6 +1,6 @@
 @font-face {
     font-family: Bebas-Neue;
-    src: url(../assets/BebasNeue-Regular.ttf);
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
 }
 /* reset de margin */
 *{
@@ -16,15 +16,22 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    /* border: 5px solid greenyellow; */
 }
-/*  */
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* alinhamento a direita da box dos links */
 header .header-flex{
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: flex-end;
-    border: 1px solid greenyellow;
 }
 
 /* Header / cabeçalho */
@@ -40,7 +47,6 @@ header {
 header nav{
     display: flex;
     width: 600px;
-    /* border: 3px solid black;    */
     justify-content: space-between; 
 }
 
@@ -49,6 +55,79 @@ header nav a{
     font-size: 18px;
     text-transform: uppercase;
     text-decoration-line: none;
-    font-family: sans-serif;
+    font-family: "Bebas-Neue";
+    letter-spacing: 2px; 
+    text-shadow: 2px 5px 10px black ; 
+    padding: 15px 20px;
+    border-radius: 5px; 
+    
+}
+
+/* Adiciona sombra aos links ao passar o mouse */
+header nav a:hover{
+    text-shadow: 2px 5px 10px black ;
+    background-color: rgb(122, 121, 121);
+
+}
+
+
+
+
+/* MAIN */
+.banner{
+    height: 740px;
+    background-image: url(../assets/images/imagem-fundo-banner.png) ;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+}   
+
+#h1main{
+    font-family: "Bebas-Neue";
+    color: white;
+    font-size: 96px;
+    border-bottom: 1px solid #FFAF00;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+#h2main{
+    font-size: 53px;
+    color: #F9003D;
+    font-family: 'Courier New';
+    text-transform: uppercase;
+    
+}
+
+
+/* Margin do ícone mouse amarelo */
+#mouse-yellow{
+    margin-top: 35px;
+}
+
+
+main article div {
+    height: 740px;
+}
+
+
+
+
+/* SECTION Sobre Projetos */
+
+#h1section{
+    font-family: "Bebas-Neue";
+    color: #F9003D;
+    font-size: 64px;
+}
+
+main section{
+    height: 740px;
+    background-color: #080324;
+    border: 1px solid greenyellow;
+}
+
+section .h3{
     
 }
