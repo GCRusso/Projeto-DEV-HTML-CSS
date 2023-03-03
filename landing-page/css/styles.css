@@ -2,11 +2,15 @@
     font-family: Bebas-Neue;
     src: url(../assets/fonts/BebasNeue-Regular.ttf);
 }
+@font-face {
+    font-family: opensans;
+    src: url(landing-page\assets\fonts\OpenSans-Italic-VariableFont_wdth,wght.ttf);
+}
 /* reset de margin */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 
 }
 
@@ -16,6 +20,11 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    border: 1px solid goldenrod;
+}
+
+body{
+    background-color: #020324;
 }
 
 .flex {
@@ -120,23 +129,64 @@ main article div {
     font-family: "Bebas-Neue";
     color: #F9003D;
     font-size: 64px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
-main section{
-    height: 740px;
-    background-color: #080324;
-    border: 1px solid greenyellow;
-}
 
-section .h3{
+section .modelh3{
     font-family: 'Courier New';
     font-size: 24px;
     color: white;
     text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
-section .h4{
+section .modelh4{
     font-family: "Bebas-Neue";
     font-size: 64px;
     color: #FFAF00;
+    margin-bottom: 18px;
 }
+
+section .paragrafo {
+    font-family: "opensans";
+    font-size: 18px;
+    color: white;
+    width: 592px;
+}
+
+#box2{
+    display: flex;
+    flex-direction: column;
+}
+
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* INFORMAÇÕES */
+
+.modelparagrafo{
+    font-family: 'Courier New';
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #A259F7;
+    border: 1px solid #A259F7;
+    height: 100px;
+    width: 289px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacebetween{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* NAO ESQUECER DE COLOCAR A IMAGEM DE FUNDO NA PARTE DE INFORMAÇÕES */
