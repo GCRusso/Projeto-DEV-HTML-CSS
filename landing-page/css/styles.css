@@ -2,12 +2,14 @@
     font-family: Bebas-Neue;
     src: url(../assets/fonts/BebasNeue-Regular.ttf);
 }
+
 @font-face {
     font-family: opensans;
     src: url(landing-page\assets\fonts\OpenSans-Italic-VariableFont_wdth,wght.ttf);
 }
+
 /* reset de margin */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,10 +22,10 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid goldenrod;
+
 }
 
-body{
+body {
     background-color: #020324;
 }
 
@@ -36,7 +38,8 @@ body{
 
 
 /* alinhamento a direita da box dos links */
-header .header-flex{
+
+header .header-flex {
     display: flex;
     align-items: center;
     height: 100%;
@@ -53,28 +56,28 @@ header {
     justify-content: flex-end;
 }
 
-header nav{
+header nav {
     display: flex;
     width: 600px;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-header nav a{
+header nav a {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
     text-decoration-line: none;
     font-family: "Bebas-Neue";
-    letter-spacing: 2px; 
-    text-shadow: 2px 5px 10px black ; 
+    letter-spacing: 2px;
+    text-shadow: 2px 5px 10px black;
     padding: 15px 20px;
-    border-radius: 5px; 
-    
+    border-radius: 5px;
+
 }
 
 /* Adiciona sombra aos links ao passar o mouse */
-header nav a:hover{
-    text-shadow: 2px 5px 10px black ;
+header nav a:hover {
+    text-shadow: 2px 5px 10px black;
     background-color: rgb(122, 121, 121);
 
 }
@@ -82,36 +85,36 @@ header nav a:hover{
 
 
 
-/* MAIN */
-.banner{
+/* ARTICLE Desenvolvimento de sistemas */
+.banner {
     height: 740px;
-    background-image: url(../assets/images/imagem-fundo-banner.png) ;
+    background-image: url(../assets/images/imagem-fundo-banner.png);
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
     background-size: cover;
-}   
+}
 
-#h1main{
+#h1main {
     font-family: "Bebas-Neue";
     color: white;
     font-size: 96px;
     border-bottom: 1px solid #FFAF00;
     margin-top: 25px;
     margin-bottom: 25px;
-    
+
 }
 
-#h2main{
+#h2main {
     font-size: 53px;
     color: #F9003D;
     font-family: 'Courier New';
     text-transform: uppercase;
-    
+
 }
 
 
 /* Margin do ícone mouse amarelo */
-#mouse-yellow{
+#mouse-yellow {
     margin-top: 35px;
 }
 
@@ -125,7 +128,7 @@ main article div {
 
 /* SECTION Sobre Projetos */
 
-#h1section{
+#h1section {
     font-family: "Bebas-Neue";
     color: #F9003D;
     font-size: 64px;
@@ -134,7 +137,7 @@ main article div {
 }
 
 
-section .modelh3{
+section .modelh3 {
     font-family: 'Courier New';
     font-size: 24px;
     color: white;
@@ -142,7 +145,7 @@ section .modelh3{
     margin-bottom: 18px;
 }
 
-section .modelh4{
+section .modelh4 {
     font-family: "Bebas-Neue";
     font-size: 64px;
     color: #FFAF00;
@@ -156,20 +159,22 @@ section .paragrafo {
     width: 592px;
 }
 
-#box2{
+#box2 {
     display: flex;
     flex-direction: column;
 }
 
-.spacebetween{
+.between {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 35px;
+    padding-top: 35px;
 }
 
 
 /* INFORMAÇÕES */
 
-.modelparagrafo{
+.modelparagrafo {
     font-family: 'Courier New';
     font-weight: bold;
     font-size: 28px;
@@ -183,11 +188,65 @@ section .paragrafo {
     align-items: center;
 }
 
-.spacebetween{
+.spacebetween {
     display: flex;
     justify-content: space-around;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
 }
 
+.bannerinfo {
+    background-image: url(../assets/images/imagem-fundo-info.png);
+    background-size: cover;
+}
 
-/* NAO ESQUECER DE COLOCAR A IMAGEM DE FUNDO NA PARTE DE INFORMAÇÕES */
+/* FOOTER RODAPÉ */
+
+#address{
+    font-family: 'Courier New';
+    font-size: 24px;
+    color: #A259F7;
+    border: 1px solid #A259F7;
+    width: 899px;
+    height: 204px;
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    margin-top: 30px; 
+    margin-left: 150px;
+    padding-left: 66px;
+    position: relative;
+}
+
+#marginpadding{
+    padding-top: 80px;
+}
+
+#map{
+    position: relative;
+    bottom: 275px;
+    left: 725px;
+}
+
+#map:hover{
+    box-shadow: 10px 10px 50px black;
+}
+
+#bannerfooter{
+    background-image: url(../assets/images/imagem-fundo-endereco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.copyright{
+    font-family: "opensans";
+    font-size: 18px;
+    color: white;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9003D;
+    
+}
