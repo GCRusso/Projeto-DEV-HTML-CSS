@@ -16,6 +16,8 @@
 
 }
 
+/* DESKTOP FIRST */
+
 /* classes genéricas */
 /* margem de 10% 5% de cada lado */
 .layout-grid {
@@ -250,3 +252,24 @@ section .paragrafo {
     background-color: #F9003D;
     
 }
+
+
+/* MEDIA QUERIES */
+
+/* SMARTPHONE >= 0 ate 767px */
+@media screen and (max-width: 767px) {
+    header #menu-mobile{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+
+
+    }
+
+    header nav a{
+        display: none;
+    }
+}
+
+
