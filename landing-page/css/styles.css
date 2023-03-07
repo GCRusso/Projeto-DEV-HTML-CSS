@@ -205,7 +205,7 @@ section .paragrafo {
 
 /* FOOTER RODAPÉ */
 
-#address{
+#address {
     font-family: 'Courier New';
     font-size: 24px;
     color: #A259F7;
@@ -215,33 +215,33 @@ section .paragrafo {
     display: flex;
     align-items: center;
     justify-content: ;
-    margin-top: 30px; 
+    margin-top: 30px;
     margin-left: 150px;
     padding-left: 66px;
     position: relative;
 }
 
-#marginpadding{
+#marginpadding {
     padding-top: 80px;
 }
 
-#map{
+#map {
     position: relative;
     bottom: 275px;
     left: 725px;
 }
 
-#map:hover{
+#map:hover {
     box-shadow: 10px 10px 50px black;
 }
 
-#bannerfooter{
+#bannerfooter {
     background-image: url(../assets/images/imagem-fundo-endereco.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.copyright{
+.copyright {
     font-family: "opensans";
     font-size: 18px;
     color: white;
@@ -250,26 +250,43 @@ section .paragrafo {
     justify-content: center;
     align-items: center;
     background-color: #F9003D;
-    
+
 }
 
 
-/* MEDIA QUERIES */
+/***** MEDIA QUERIES *****/
 
-/* SMARTPHONE >= 0 ate 767px */
+/* tablets >= 768px até 991px*/
+@media screen and (max-width: 991px) {}
+
+/* smartphones >= 0 até 767px */
 @media screen and (max-width: 767px) {
-    header #menu-mobile{
-        display: flex;
-        justify-content: flex-end;
+    header #menu-mobile {
+        display: block;
+    }
+
+
+    header nav {
+        position: fixed;
+        top: 59px;
+        left: -80vw;
+        height: calc(100% - 60px);
+        width: 80%;
+        background-color: #F9003D;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-
-
+        justify-content: space-around;
 
     }
 
-    header nav a{
+    main,footer {
         display: none;
     }
+
+    .mostrarmenu{
+        left: 0;
+
+    }
+
 }
-
-
