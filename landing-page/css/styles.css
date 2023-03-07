@@ -277,15 +277,19 @@ section .paragrafo {
         justify-content: center;
         align-items: center;
         justify-content: space-around;
+        opacity: 0;
+        transition: left 0.7s, opacity 0.9s;
 
     }
 
-    main,footer {
+    /* main, */
+    footer {
         display: none;
     }
 
-    .mostrarmenu{
+    .mostrarmenu {
         left: 0;
+        opacity: 1;
 
     }
 
