@@ -283,7 +283,7 @@ section .paragrafo {
     }
 
     /* main, */
-    footer {
+    footer,main {
         display: none;
     }
 
@@ -292,5 +292,7 @@ section .paragrafo {
         opacity: 1;
 
     }
+
+
 
 }
