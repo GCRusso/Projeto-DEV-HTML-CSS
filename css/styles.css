@@ -254,6 +254,7 @@ section .paragrafo {
 }
 
 
+
 /***** MEDIA QUERIES *****/
 
 /* tablets >= 768px até 991px*/
@@ -261,6 +262,7 @@ section .paragrafo {
 
 /* smartphones >= 0 até 767px */
 @media screen and (max-width: 767px) {
+
     header #menu-mobile {
         display: block;
     }
@@ -281,6 +283,7 @@ section .paragrafo {
         transition: left 0.7s, opacity 0.9s;
 
     }
+
 
     /* main, */
     footer,main {
