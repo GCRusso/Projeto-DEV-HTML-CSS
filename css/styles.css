@@ -84,6 +84,11 @@ header nav a:hover {
 
 }
 
+/* oculta o logo sanduiche da pagina desktop */
+header #menu-mobile {
+    display: none;
+}
+
 
 
 
@@ -252,6 +257,7 @@ section .paragrafo {
     background-color: #F9003D;
 
 }
+
 
 
 
