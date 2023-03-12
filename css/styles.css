@@ -22,7 +22,7 @@
 /* margem de 10% 5% de cada lado */
 .layout-grid {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
 
 }
@@ -36,6 +36,13 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+}
+
+.align-box-between {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    padding-top: 35px;
 }
 
 
@@ -94,7 +101,6 @@ header #menu-mobile {
 
 /* ARTICLE Desenvolvimento de sistemas */
 .banner {
-    height: 740px;
     background-image: url(../assets/images/imagem-fundo-banner.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -123,11 +129,7 @@ header #menu-mobile {
 /* Margin do ícone mouse amarelo */
 #mouse-yellow {
     margin-top: 35px;
-}
-
-
-main article div {
-    height: 740px;
+    margin-bottom: 35px;
 }
 
 
@@ -135,7 +137,7 @@ main article div {
 
 /* SECTION Sobre Projetos */
 
-#h1section {
+.h1section {
     font-family: "Bebas-Neue";
     color: #F9003D;
     font-size: 64px;
@@ -166,17 +168,21 @@ section .paragrafo {
     width: 592px;
 }
 
-#box2 {
+.box2 {
     display: flex;
     flex-direction: column;
 }
 
-.between {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 35px;
-    padding-top: 35px;
+.modelh3 {
+    font-family: 'Courier New';
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 18px;
 }
+
+
+
 
 
 /* INFORMAÇÕES */
@@ -195,7 +201,7 @@ section .paragrafo {
     align-items: center;
 }
 
-.spacebetween {
+.box-informacoes {
     display: flex;
     justify-content: space-around;
     padding-top: 35px;
@@ -210,7 +216,7 @@ section .paragrafo {
 
 /* FOOTER RODAPÉ */
 
-#address {
+.address {
     font-family: 'Courier New';
     font-size: 24px;
     color: #A259F7;
@@ -219,7 +225,6 @@ section .paragrafo {
     height: 204px;
     display: flex;
     align-items: center;
-    justify-content: ;
     margin-top: 30px;
     margin-left: 150px;
     padding-left: 66px;
@@ -269,13 +274,26 @@ section .paragrafo {
 /* smartphones >= 0 até 767px */
 @media screen and (max-width: 767px) {
 
+    /* CLASSES GENÉRICAS */
+
+    .layout-grid {
+        max-width: 355px;
+    }
+
+
+    /* HEADER */
+
     header #menu-mobile {
         display: block;
     }
 
+    header {
+        position: fixed;
+    }
 
     header nav {
-        position: fixed;
+        z-index: 5;
+        position:fixed;
         top: 59px;
         left: -80vw;
         height: calc(100% - 60px);
@@ -286,15 +304,13 @@ section .paragrafo {
         align-items: center;
         justify-content: space-around;
         opacity: 0;
-        transition: left 0.7s, opacity 0.9s;
+        transition: left 0.7s, opacity 1.5s;
 
     }
 
 
-    /* main, */
-    footer,main {
-        display: none;
-    }
+    /* MAIN ARTICLE DESENVOLVIMENTOS DE SISTEMAS */
+
 
     .mostrarmenu {
         left: 0;
@@ -303,5 +319,104 @@ section .paragrafo {
     }
 
 
+    main .flex #h1main {
+        font-size: 40px;
+        border-bottom: none;
+        margin-top: 83px;
 
-}
+    }
+
+    main .flex #h2main {
+        font-size: 53px;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 200px;
+
+    }
+
+    #mouse-yellow {
+        display: none;
+    }
+
+    /* MAIN SECTION SOBRE PROJETOS */
+
+    main section div .h1section {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .img-section-sobre {
+        max-width: 355px;
+    }
+
+    .align-box-between {
+        flex-direction: column;
+    }
+
+    main section div div article .modelh4 {
+        font-size: 30px;
+    }
+
+    main section div div article .modelh3 {
+        position: relative;
+        bottom: 420px;
+        z-index: -1;
+    }
+
+    main .paragrafo {
+        max-width: 355px;
+    }
+
+
+    /* INFORMAÇÕES */
+
+    section .box-informacoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section div article .modelh3 {
+        padding-top: 35px;
+    }
+    
+    #marginpadding {
+        padding-top: 40px;
+    }
+
+    /* FOOTER */
+    footer section .modelh4 {
+        font-size: 40px;
+    }
+
+    .address {
+        position: static;
+        background-color: black;
+        max-width: 355px;
+        margin-left: 0px;
+        padding-left: 0px;
+        border-bottom: none;
+    }
+
+    footer section div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #map {
+        position: static;
+        padding: 15px;
+        padding-top: 0px;
+        border: 1px solid #A259F7;
+        background-color: black;
+        border-top: none;
+    }
+
+
+    .copyright {
+        margin-top: 43px;
+        font-size: 15px;
+        height: 65px;
+
+    }
